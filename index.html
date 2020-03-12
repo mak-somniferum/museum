@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>건강과 성 박물관</title>
+    <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .swiper-container.main-swiper {width: 100vw; height: 100vh; min-height:600px;}
+    </style>
 </head>
 <body>
     <header>
@@ -20,17 +24,30 @@
             </ul>
         </nav>
 
-        <div class="utill">
-            <a href="#">User</a>
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Join Us</a></li>
-            </ul>
+        <div class="user">
+            <a href="#" class="btn">User</a>
+            <div class="user_bx">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <div id="main">
-        <section class="visual"></section>
+        <section class="visual">
+            <div class="swiper-container main-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/img/visual01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/visual02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/visual03.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-main"></div>
+            </div>
+        </section>
+        <!-- visual -->
+
         <section class="tour"></section>
         <section class="books"></section>
         <section class="contest"></section>
@@ -58,6 +75,20 @@
     </footer>
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+        var swiperVisual = new Swiper('.main-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination-main',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
