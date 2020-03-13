@@ -4,45 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>건강과 성 박물관</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .swiper-container.main-swiper {width: 100vw; height: 100vh; min-height:600px;}
-    </style>
-    
 </head>
 <body>
-    <header>
-        <h1><a href="/">건강과 성 박물관</a></h1>
+    <header id="header">
+        <div class="header_inner">
+            <h1><a href="/">건강과 성 박물관</a></h1>
         
-        <nav id="gnb">
-            <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">GUIDE</a></li>
-                <li><a href="#">COLUMN</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">COMMUNITY</a></li>
-            </ul>
-        </nav>
-
-        <div class="user">
-            <a href="#" class="btn">User</a>
-            <div class="user_bx">
+            <nav id="gnb">
                 <ul>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                    <li><a href="#">COLUMN</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
                 </ul>
+            </nav>
+
+            <div class="m_menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="m_gnb">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                    <li><a href="#">COLUMN</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                </ul>
+            </nav>
+    
+            <div class="user">
+                <a href="#" class="btn">User</a>
+                <div class="user_bx">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
     <div id="main">
         <section class="visual">
+            <div class="tit_bx">
+                <h2>The Global <strong>Museume</strong> of<br><strong>Sex</strong> and <strong>Health</strong></h2>
+                <p>성건강, 성교육, 성문화 중심 테마</p>
+            </div>
             <div class="swiper-container main-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/img/visual01.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="/img/visual02.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="/img/visual03.jpg" alt=""></div>
+                    <div class="swiper-slide slide01"></div>
+                    <div class="swiper-slide slide02"></div>
+                    <div class="swiper-slide slide03"></div>
                 </div>
                 <div class="swiper-pagination swiper-pagination-main"></div>
             </div>
@@ -140,18 +161,22 @@
     <!-- main -->
      
     <footer>
-        <address>제주특별자치도 서귀포시 안덕면 일주서로 1611 (감산리 1736)</address>
-        <p class="tel">Tel : 064-792-5700</p>
-        <p class="copy">ⓒ  2020. 건강과 성 박물관</p>
-
-        <div class="f_utill">
-            <ul class="sns">
-                <li class="fb"><a href="#" target="_blank">Facebook</a></li>
-                <li class="insta"><a href="#" target="_blank">Instagram</a></li>
-                <li class="blog"><a href="#" target="_blank">Blog</a></li>
-            </ul>
-            <div class="family">
-                <a href="#" class="btn">FAMILY SITE</a>
+        <div class="footer_inner">
+            <div class="txt_bx">
+                <address>제주특별자치도 서귀포시 안덕면 일주서로 1611 (감산리 1736)</address>
+                <p class="tel">Tel : 064-792-5700</p>
+                <p class="copyright">ⓒ  2020. 건강과 성 박물관</p>
+            </div>
+    
+            <div class="f_utill">
+                <ul class="sns">
+                    <li class="fb"><a href="#" target="_blank">Facebook</a></li>
+                    <li class="insta"><a href="#" target="_blank">Instagram</a></li>
+                    <li class="naver"><a href="#" target="_blank">Blog</a></li>
+                </ul>
+                <div class="family">
+                    <a href="#" class="btn">FAMILY SITE</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -162,6 +187,7 @@
     <script>
         var swiperVisual = new Swiper('.main-swiper', {
             loop: true,
+            effect: 'fade',
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
