@@ -22,10 +22,7 @@ var swiper = new Swiper('.book-swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+  
       mousewheel: true,
       keyboard: true,
   });
