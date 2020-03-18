@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.books_inner p, .books b{
+.books_inner p, .books_inner b{
     font-size: 30px;
     padding-top: 30px;
 }
@@ -48,6 +48,49 @@
     top: 60%;
 }
 
+ .books .book_deta{
+    max-width: 1280px;
+    width: 100%;
+    margin:  0 auto;
+    border: 1px solid #000;
+}
+
+.books .book_deta li{
+    width: 87%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.books .book_deta li .deta_img{
+    width: 30%;
+    float: left;
+    padding: 20px;
+}
+
+
+.books .book_deta li .deta_img img{
+    width: 100%;
+}
+
+.books .book_deta li .deta_txt{
+    width: 100%;
+    padding: 20px;
+}
+
+.books .book_deta li .deta_txt h2{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.books .book_deta li .deta_txt b{
+    font-size: 18px;
+
+}
+
+.books .book_deta li .deta_txt p{
+    font-size: 15px;
+    padding: 5px;
+}
 /*section contest*/
 
 .contest{
