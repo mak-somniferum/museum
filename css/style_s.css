@@ -9,9 +9,9 @@
 .main-swiper img {width:100%; height:100%;}
 .main-swiper .swiper-slide {background-repeat: no-repeat; background-size: cover; background-position: center bottom;}
 .main-swiper .swiper-slide::before {content: ''; display:block; width:100%; height:100%; background-color: rgba(0,0,0,0.5); position:absolute; left:0; top:0;}
-.main-swiper .swiper-slide.slide01 {background-image: url('/img/visual01.jpg');}
-.main-swiper .swiper-slide.slide02 {background-image: url('/img/visual02.jpg');}
-.main-swiper .swiper-slide.slide03 {background-image: url('/img/visual03.jpg');}
+.main-swiper .swiper-slide.slide01 {background-image: url('../img/visual01.jpg');}
+.main-swiper .swiper-slide.slide02 {background-image: url('../img/visual02.jpg');}
+.main-swiper .swiper-slide.slide03 {background-image: url('../img/visual03.jpg');}
 .main-swiper .swiper-pagination {bottom:50px;}
 .main-swiper .swiper-pagination-bullet {width:10px; height:10px; background:#fff; margin:0 10px !important;}
 .main-swiper .swiper-pagination-bullet-active {background:#fff;}

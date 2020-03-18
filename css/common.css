@@ -2,7 +2,7 @@
 header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fixed; left:0; top:0; z-index:10; transition:background-color 0.4s;}
 .header_inner {width:96%; max-width:1280px; height:110px; margin:0 auto; position: relative;}
 .header_inner h1 {position:absolute; left:0; top:50%; transform: translateY(-50%);}
-.header_inner h1 a {display:block; width:170px; height:79px; text-indent:-9999px; background: url('/img/logo_w.png') no-repeat; background-size: cover; transition:background 0.4s;}
+.header_inner h1 a {display:block; width:170px; height:79px; text-indent:-9999px; background: url('../img/logo_w.png') no-repeat; background-size: cover; transition:background 0.4s;}
 
 #gnb {width:62%; margin:0 auto;}
 #gnb ul {display:flex; justify-content: space-around;}
@@ -12,7 +12,7 @@ header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fix
 .user {position: absolute; right:0; top:50%; transform: translateY(-50%);}
 .user .btn {display:block; width:50px; height:50px; border-radius: 50%; background: #fff; text-indent:-9999px;}
 .user .user_bx {display:none; position: absolute; left:50%; top:65px; transform: translateX(-50%); box-shadow: 0 5px 13px rgba(0,0,0,0.15);}
-.user .user_bx::before {content: ''; display:block; width:13px; height:8px; background: url('/img/arrow-user.png') no-repeat; position:absolute; left:50%; top:0; transform: translate(-50%, -100%);}
+.user .user_bx::before {content: ''; display:block; width:13px; height:8px; background: url('../img/arrow-user.png') no-repeat; position:absolute; left:50%; top:0; transform: translate(-50%, -100%);}
 .user .user_bx ul li {border-bottom: 1px solid #e1e1e1;}
 .user .user_bx ul li:last-child {border-bottom: none;}
 .user .user_bx ul li a {display:block; width:100px; line-height:44px; color:#555; text-align:center; background-color: #fff; transition: 0.2s;}
@@ -25,7 +25,7 @@ header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fix
 
 /* header white 활성화 */
 header.white {background-color: rgba(255,255,255,0.9);}
-header.white h1 a {background-image: url('/img/logo_b.png');}
+header.white h1 a {background-image: url('../img/logo_b.png');}
 header.white #gnb ul li a {color:#333;}
 header.white .m_menu_btn span {background-color:#000;}
 
@@ -38,10 +38,10 @@ footer {background-color: #1d1212;}
 .f_utill {display:flex;}
 .f_utill .sns {display:flex; margin:5px 20px 0 0;}
 .f_utill .sns li a {display:block; width:23px; height:23px; text-indent: -9999px; opacity:0.4; background-size: contain; background-repeat: no-repeat;}
-.f_utill .sns li.fb a {background-image:url('/img/icon-fb.png');}
+.f_utill .sns li.fb a {background-image:url('../img/icon-fb.png');}
 .f_utill .sns li.insta {margin:0 20px 0 10px;}
-.f_utill .sns li.insta a {background-image:url('/img/icon-insta.png');}
-.f_utill .sns li.naver a {background-image:url('/img/icon-naver.png');}
+.f_utill .sns li.insta a {background-image:url('../img/icon-insta.png');}
+.f_utill .sns li.naver a {background-image:url('../img/icon-naver.png');}
 .f_utill .family .btn {display:block; width:126px; line-height:30px; text-align:center; border:1px solid #555; color:#888; font-size:12px; font-weight:300;}
 
 
