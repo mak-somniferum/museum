@@ -14,15 +14,3 @@ $('.user .btn').click(function(){
 })
 
 
-var swiper = new Swiper('.book-swiper', {
-    slidesPerView: 6,
-    slidesPerGroup: 6,
-      loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-  
-      mousewheel: true,
-      keyboard: true,
-  });
