@@ -49,11 +49,11 @@
     padding: 4% 0 4% 5%;
 }
 
-h3{
+.txtBox h3{
     font-size: 20px;
     margin-bottom: 10px;
 }
-h4{
+.txtBox h4{
     font-size: 11px;
     font-weight: lighter;
     margin-bottom: 5px;
@@ -62,7 +62,7 @@ h5{
     font-size: 16px;
     margin-bottom: 10px;
 }
-p{
+.txtBox p,.c_txtBox p{
     font-size: 13px;
     
 }
