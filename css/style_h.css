@@ -36,7 +36,7 @@ reset.css에 써있어서 안써도 됨
     position: relative;
 }
 .book-swiper{
-    width: 90%;
+    width: calc(90% + 1px);
     position: static !important;
 }
 
@@ -45,10 +45,11 @@ reset.css에 써있어서 안써도 됨
 }
 
 .book-swiper .swiper-slide{
-    height:250px;
+    height:318px;
     overflow: hidden;
-    background-color: #eee;
+    background-color: #fcfcfc;
     border: 1px solid #dfdfdf;
+    cursor: pointer;
 
     /* 내부 이미지 중앙정렬 */
     display:flex;
@@ -60,58 +61,61 @@ reset.css에 써있어서 안써도 됨
     width: 100%;
 }
 
+.book-swiper .swiper-button-next::after,
+.book-swiper .swiper-button-prev::after {content:"";}
+.book-swiper .swiper-button-next,
+.book-swiper .swiper-button-prev {width:25px; height:44px;}
 .book-swiper .swiper-button-next{
     top: 50%;
+    background: url('../img/arrow-next.png');
 }
 .book-swiper .swiper-button-prev{
     top: 50%;
+    background: url('../img/arrow-prev.png');
 }
 
+/*
 .books .book_deta{
-    /*
     max-width: 1280px;
     width: 100%;
     margin:  0 auto;    .inner 적용으로 필요없어짐
-    */
+    
     border: 1px solid #ddd;
 }
+*/
 
 .books .book_deta li{
     width: 87%;
     overflow: hidden;
     margin: auto;
+    display:flex;
 }
 
 .books .book_deta li .deta_img{
     width: 30%;
-    float: left;
-    padding: 20px;
+    padding: 40px 20px 0;
 }
-
 
 .books .book_deta li .deta_img img{
     width: 100%;
+    border: 1px solid #dfdfdf;
 }
 
 .books .book_deta li .deta_txt{
-    width: 100%;
-    padding: 20px;
+    width: 70%;
+    padding: 40px 20px 0;
 }
 
 .books .book_deta li .deta_txt h5{
     font-size: 24px;
-    padding: 10px;
+    font-weight: 400;
+    margin-bottom:20px;
 }
+.books .book_deta li .deta_txt dl {display:flex; flex-wrap:wrap;}
+.books .book_deta li .deta_txt dl dt {width: 70px; font-size:15px; line-height:1.6; padding-bottom:5px;}
+.books .book_deta li .deta_txt dl dd {width:calc(100% - 70px); font-size:15px; line-height:1.6; font-weight:300;}
 
-.books .book_deta li .deta_txt b{
-    font-size: 18px;
 
-}
-
-.books .book_deta li .deta_txt p{
-    font-size: 15px;
-    padding: 5px;
-}
 /*section contest*/
 
 .contest{

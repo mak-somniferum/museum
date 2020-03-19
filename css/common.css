@@ -57,8 +57,8 @@ footer {background-color: #121212; border-top: 1px solid #333;}
 /* main */
 .inner {width:90%; max-width:1280px; margin:0 auto; padding:50px 0;}
 .title {margin-bottom: 50px; text-align:center;}
-.title h4 {font-size:38px; font-weight:100; color:#1e1e1e; letter-spacing: -0.05em;}
-.title h4 strong {font-size:38px; font-weight:700; color:#1e1e1e;}
+.title h4 {font-size:40px; font-weight:100; color:#1e1e1e; letter-spacing: -0.05em;}
+.title h4 strong {font-size:40px; font-weight:700; color:#1e1e1e;}
 
 
 
