@@ -8,6 +8,7 @@ window.onscroll = function(){
     }
 }
 
+board()
 
 // 상단 유저 버튼 클릭시 로그인, 회원가입 레이어 fadeToggle
 $('.user .btn').click(function(){
@@ -27,5 +28,32 @@ $(window).resize(function(){
         $('#m_gnb').slideUp()
         $('.m_menu_btn').removeClass('change')
     }
+
+    board()
 })
+
+// 하단 게시판
+function board(){
+    var w = $(window).width()
+    if(w<=990){
+        $('.board .tabs ul li').first().find('a').addClass('active')
+        $('.board .tab_cont>ul>li').hide()
+        $('.board .tab_cont>ul>li').first().show()
+
+        var listH = $('.board .tab_cont>ul>li').height()
+        $('.board .tab_cont>ul').height(listH+40)
+
+        $('.board .tabs ul li').click(function(){
+            var idx = $(this).index()
+            $('.board .tabs ul li a').removeClass('active')
+            $(this).find('a').addClass('active')
+            $('.board .tab_cont>ul>li').hide()
+            $('.board .tab_cont>ul>li').eq(idx).show()
+            return false
+        })
+    }else {
+        $('.board .tabs ul li a').removeClass('active')
+        $('.board .tab_cont>ul>li').show()
+    }
+}
 

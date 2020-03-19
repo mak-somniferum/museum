@@ -39,7 +39,7 @@ header.white #gnb ul li a:hover {color:#8cc63f;}
 header.white .m_menu_btn span {background-color:#000;}
 
 /* footer */
-footer {background-color: #1d1212;}
+footer {background-color: #121212; border-top: 1px solid #333;}
 .footer_inner {width:96%; max-width:1280px; padding:50px 0; margin:0 auto; display:flex; justify-content: space-between;}
 .footer_inner address,
 .footer_inner p {display:block; font-size:12px; color:#888; line-height:1.5;}
@@ -53,6 +53,12 @@ footer {background-color: #1d1212;}
 .f_utill .sns li.naver a {background-image:url('../img/icon-naver.png');}
 .f_utill .family .btn {display:block; width:126px; line-height:30px; text-align:center; border:1px solid #555; color:#888; font-size:12px; font-weight:300;}
 
+
+/* main */
+.inner {width:90%; max-width:1280px; margin:0 auto; padding:50px 0;}
+.title {margin-bottom: 50px; text-align:center;}
+.title h4 {font-size:38px; font-weight:100; color:#1e1e1e; letter-spacing: -0.05em;}
+.title h4 strong {font-size:38px; font-weight:700; color:#1e1e1e;}
 
 
 
