@@ -227,7 +227,7 @@
                     </div>
                     <!-- book data(책소개)-->
                     <ul class="book_deta">
-                        <li>
+                        <li class="on">
                             <div class="deta_img"><img src="img/as1.jpg" alt=""></div>
                             <div class="deta_txt">
                                 <h5>난 싫다고 말해요</h5>
@@ -361,11 +361,18 @@
                         </ul>
                     </div>
                     <button>이전 수상작 둘러보기</button>
-                    <ul class="contest_art">
+                    <ul class="contest_art">                        
+                        <li><img src="img/ct_00.jpg" alt=""></li>
                         <li><img src="img/ct_01.jpg" alt=""></li>
                         <li><img src="img/ct_02.jpg" alt=""></li>
                         <li><img src="img/ct_03.jpg" alt=""></li>
                         <li><img src="img/ct_04.jpg" alt=""></li>
+                        <li><img src="img/ct_05.jpg" alt=""></li>
+                        <li><img src="img/ct_06.jpg" alt=""></li>
+                        <li><img src="img/ct_07.jpg" alt=""></li>
+                        <li><img src="img/ct_08.jpg" alt=""></li>
+                        <li><img src="img/ct_09.jpg" alt=""></li>
+                        <li><img src="img/ct_10.jpg" alt=""></li>
                     </ul>
                 </div>
             </section>
@@ -607,17 +614,15 @@
 
     var swiper = new Swiper('.worldArt-swiper', {
     //   direction: 'vertical',
-            slidesPerView: 4,
-            slidesPerGroup: 4,
-            spaceBetween: 20,
+          slidesPerView: 'auto',
+            spaceBetween: 30,
             loop: true,
     	mousewheel: true,
             keyboard: true,
-           breakpoints: {
-                576: {slidesPerView: 2,},
-                768: {slidesPerView: 3,},
-                1280: {slidesPerView: 4,},
-            }
+            autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
     });
 
     </script>
