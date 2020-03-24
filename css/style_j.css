@@ -1,130 +1,122 @@
-
 .tour{
-    
-    height: 300vh;
+    /* height:300vh;  >>  유연성을 위해 지움 > 아래 컨텐츠를 absolute로 지정할 필요 없음 (left, left2, right 등)
     background-image: url('../img/tourbg.jpg');
+    background-repeat: no-repeat; */
+    background: url('../img/tourbg.jpg') no-repeat;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     position: relative;
 }
+.tour .tour_line {position:absolute; left:50%; top:0; transform: translateX(-50%); width:100%; max-width:1280px; padding-left:50px;}
 
-.titBox h1{
-   width: 291px;
-   height: 74px;
-   font-size: 40px;
-   font-weight: normal;
-   letter-spacing: -0.07em;
+.tour .inner {padding:70px 0 50px;}
+.tour .titBox {text-align:center; margin-bottom:200px;}
+.tour .titBox h2{
+   font-size: 45px;
+   letter-spacing: -0.05em;
+   font-weight: 700;
+   /* width: 291px;
+   height: 74px;        width와 height은 .titBox의 text-align:center;를 위해 지움
+   font-weight: normal; 직관성 있게 숫자로 씀
    position: absolute;
    left: 35%;
-   top: 2%;
+   top: 2%; */
 }
-.titBox h2{
-    width: 212px;
-    height: 53px;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: -0.07em;
+.tour .titBox h3{
+    font-size: 40px;
+    letter-spacing: -0.05em;
+    font-weight: 100;
+    /* width: 212px;
+    height: 53px;      width와 height은 .titBox의 text-align:center;를 위해 지움
+    font-weight: bold; 직관성 있게 숫자로 씀
     position: absolute;
     left: 48%;
-    top: 4.5%;
+    top: 4.5%; */
 }
 
-.tbg img{
-    width: 46%;
-    height: 100%;
-}
-.tb1{
-    margin-bottom: 23px;
-}
-.tbg>div{
-    width: 100%;
-    height: 50%;
-    border: 1px solid #000;
-    display: flex;
-} 
-.txtBox{
-    padding: 5%;
-}
-.c_txtBox{
-    padding: 4% 0 4% 5%;
-}
-
-.txtBox h3{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.txtBox h4{
-    font-size: 11px;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-h5{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-.txtBox p,.c_txtBox p{
-    font-size: 13px;
-    
-}
-
-.cbg>div{
-    width: 100%;
-    height: 140px;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    padding: 20px 0 20px 200px;
+.tbg {margin-bottom: 150px;}
+.tbg.right{
     position: relative;
-   
-}
-
-.cbg img{
-    position: absolute;
-    width: 200px;
-    height: 120px;
-    top: 10px;
-    left: 0;
-}
-
-.right1{
-    position: absolute;
+    left:50%;
+    transform: translateX(-10%);
+    /* position: absolute;
     right: 25%;top: 9%;
     width: 490px;
-    height: 350px;
+    height: 350px; */
 }
-
-.left1{
+/*
+.tbg.left{
     position: absolute;
     left: 25%;top: 25%;
     width: 490px;
     height: 350px;
 }
-
 .right2{
     position: absolute;
     right: 25%;top: 41%;
     width: 490px;
     height: 350px;
 }
-
 .left2{
     position: absolute;
     left:25%;top: 56%;
     width: 530px;
     height: 140px;
 }
+ */
+ 
+.tbg>div {width:766px; margin-bottom: 30px; background-color: #fff; box-shadow: 20px 20px 40px rgba(0,0,0,0.2); position:relative;}
+.tbg .img {width:50%; height:100%; overflow: hidden; position:absolute; left:0; top:0;}
+.tbg .img img {width:auto; min-width:100%; min-height:100%; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
+/*
+.tb1{
+    margin-bottom: 23px; >>> .tbg>div에 margin-bottom 추가함
+}
+*/
 
-.vr{
-    width: 670px;
-    height: 430px;
-    position: absolute;
-    bottom: .5%;
-    left: 50%;
-    transform: translate(-50%);
+.tbg .txtBox{
+    /* padding: 5%; */
+    padding: 50px 50px 50px calc(50% + 50px);
 }
-.vr>iframe{
-    width: 100%;
-    height: 100%;
+.tbg .txtBox h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: -0.02rem;
 }
+.tbg .txtBox h4{
+    font-size: 35px;
+    /* font-weight: lighter; 직관성 있게 숫자로 씀 */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tbg .txtBox p {font-size: 18px; font-weight:100; line-height:1.5;}
+
+
+.cbg {width:90%; max-width:1020px; margin:0 auto;}
+.cbg>div {
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    padding: 25px 25px 25px 25px;
+    align-items: center;
+    /* position: relative; */
+}
+.cbg>div:last-child {border-bottom: none;}
+.cbg img {
+    width: 260px;
+    height: 160px;
+    /* position: absolute;
+    top: 10px;
+    left: 0; */
+}
+.cbg .c_txtBox {
+    /* padding: 4% 0 4% 5%;  >>  align-items:center 로 해결*/
+    padding-left:5%;
+}
+.cbg .c_txtBox h5{font-size: 25px; font-weight: 700; margin-bottom: 10px;}
+.cbg .c_txtBox p{font-size: 18px; font-weight:100;}
+
+.vr{width: 640px; height: 407px; margin:80px auto 0;}
+.vr>iframe{width: 100%; height: 100%;}
+
 
 @media (max-width:990px){/*990보다 커지지 않음*/
     .right1{
