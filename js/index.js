@@ -65,3 +65,7 @@ function board(){
     }
 }
 
+// .contest_art 이전 수상작 둘러보기
+$('.content button').click(function(){
+    $('.contest_art').animate({'opacity':'1'})
+})
