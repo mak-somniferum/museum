@@ -1,11 +1,14 @@
 .tour{
     /* height:300vh;  >>  유연성을 위해 지움 > 아래 컨텐츠를 absolute로 지정할 필요 없음 (left, left2, right 등)
+    
+    
     background-image: url('../img/tourbg.jpg');
     background-repeat: no-repeat; */
     background: url('../img/tourbg.jpg') no-repeat;
-    background-size: 100% 100%;
-    position: relative;
+    background-size: 100% 100%;    
 }
+
+
 .tour .tour_line {position:absolute; left:50%; top:0; transform: translateX(-50%); width:100%; max-width:1280px; padding-left:50px;}
 
 .tour .inner {padding:70px 0 50px;}
@@ -32,7 +35,6 @@
     left: 48%;
     top: 4.5%; */
 }
-
 .tbg {margin-bottom: 150px;}
 .tbg.right{
     position: relative;
@@ -46,24 +48,25 @@
 /*
 .tbg.left{
     position: absolute;
-    left: 25%;top: 25%;
-    width: 490px;
-    height: 350px;
+    left: 0;top: 27.5%;
+    width: 766px;
+    height: 600px;
 }
 .right2{
     position: absolute;
-    right: 25%;top: 41%;
-    width: 490px;
-    height: 350px;
+    right: 0;top: 46%;
+    width: 766px;
+    height: 600px;
+    
 }
 .left2{
     position: absolute;
-    left:25%;top: 56%;
-    width: 530px;
-    height: 140px;
+    top: 65%; left: 50%;
+    transform: translate(-50%);
+    width: 1020px;
+    height: 972px;
 }
  */
- 
 .tbg>div {width:766px; margin-bottom: 30px; background-color: #fff; box-shadow: 20px 20px 40px rgba(0,0,0,0.2); position:relative;}
 .tbg .img {width:50%; height:100%; overflow: hidden; position:absolute; left:0; top:0;}
 .tbg .img img {width:auto; min-width:100%; min-height:100%; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
@@ -95,7 +98,7 @@
 .cbg>div {
     border-bottom: 1px solid #dfdfdf;
     display: flex;
-    padding: 25px 25px 25px 25px;
+    padding: 25px;
     align-items: center;
     /* position: relative; */
 }
