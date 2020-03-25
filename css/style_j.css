@@ -6,6 +6,7 @@
     background-repeat: no-repeat; */
     background: url('../img/tourbg.jpg') no-repeat;
     background-size: 100% 100%;    
+    position: relative;
 }
 
 
@@ -117,36 +118,41 @@
 .cbg .c_txtBox h5{font-size: 25px; font-weight: 700; margin-bottom: 10px;}
 .cbg .c_txtBox p{font-size: 18px; font-weight:100;}
 
-.vr{width: 640px; height: 407px; margin:80px auto 0;}
+.vr{width: 900px; height: 572px; margin:80px auto 0;}
 .vr>iframe{width: 100%; height: 100%;}
 
 
-@media (max-width:990px){/*990보다 커지지 않음*/
-    .right1{
-        left: 50%;
-        right: 25%;top: 9%;
-        transform: translate(-50%); 
-    }
+@media (max-width:990px){/*990보다 커지지 않음, 990이하*/
     
-    .left1{
-        left: 50%;top: 25%;
-        transform: translate(-50%);
-    }
-    
-    .right2{
-        left: 50%;
-        right: 25%;top: 41%;
-        transform: translate(-50%);
-    }
-    
-    .left2{ 
-        left:50%;top: 56%;
-        transform: translate(-50%);
-    }
 }
 
-@media (max-width:768px){/*768보다 커지지 않음*/
+@media (max-width:768px){/*768보다 커지지 않음 768이하*/
+
+    .tour .titBox{
+        margin-bottom: 200px;
+    }
+    .tbg {margin-bottom: 350px;}
+    .tbg>div{
+        width: 500px;
+        height: 207px;
+    }
+    .tbg.right{
+        position: relative;
+        left:50%;
+        transform: translateX(-25%);
+    }
+    .cbg{
+        width: 85%;
+    }
+    .cbg div{
+        padding: 15px;
+    }
+    .cbg img{
+        width: 210px;
+        height: 130px;
+    }
+    .vr{width: 540px; height: 410px; margin:80px auto 0;}
 }
 
-@media (max-width:576px){/*576보다 커지지 않음*/
+@media (max-width:576px){/*576보다 커지지 않음 576이하*/
 }
