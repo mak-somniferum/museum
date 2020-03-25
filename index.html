@@ -524,7 +524,7 @@
                     <!-- etc -->
                 </article>
             
-                <article class="map">
+                <article id="map" class="map">
                     <p>제주특별자치도 서귀포시 안덕면 일주서로 1611 (감산리 1736)<br>Tel : 064-792-5700</p>
                 </article>
             </div>
@@ -601,15 +601,26 @@
         </div>
     </footer>
      
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBQ8-ZCeZw629ZOld5nN0GRe-6FdKlEek&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
     <script>
+        // 구글 맵
+        function initMap() {
+            var uluru = {lat: 33.254874, lng: 126.346669};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 16, center: uluru});
+            var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+
+        // 메인 투어 라인
         skrollr.init({
             forceHeight: false
         });
     
+        // 메인 비쥬얼
         var swiperVisual = new Swiper('.main-swiper', {
             loop: true,
             effect: 'fade',
@@ -627,6 +638,7 @@
 
         });
 
+        // 추천 도서 슬라이더
         var swiperBook = new Swiper('.book-swiper', {
             slidesPerView: 5,
             slidesPerGroup: 5,
@@ -645,6 +657,7 @@
             }
         });
 
+        // world art 슬라이더
     var swiper = new Swiper('.worldArt-swiper', {
     //   direction: 'vertical',
         slidesPerView: 'auto',
