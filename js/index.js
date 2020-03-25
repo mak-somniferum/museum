@@ -6,7 +6,15 @@ window.onscroll = function(){
     }else{
         this.document.getElementById('header').classList.remove('white')
     }
+
+    
 }
+$(window).scroll(function(){
+    var scrollPos2 = $(window).scrollTop()
+    if (scrollPos2>3300){
+        $('.books').animate({'opacity':'1','top':'0'})
+    }
+})
 
 board()
 
@@ -57,3 +65,7 @@ function board(){
     }
 }
 
+// .contest_art 이전 수상작 둘러보기
+$('.content button').click(function(){
+    $('.contest_art').animate({'opacity':'1'})
+})

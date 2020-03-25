@@ -1,3 +1,5 @@
+::selection {background-color: #000; color:#fff;}
+
 /* header */
 header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fixed; left:0; top:0; z-index:10; transition:background-color 0.4s;}
 .header_inner {width:96%; max-width:1280px; height:110px; margin:0 auto; position: relative;}

@@ -1,13 +1,13 @@
 /* main visual */
 .visual {background-color: #eee; position:relative;}
 .visual .tit_bx {width:90%; max-width:1280px; position: absolute; left:50%; top:50%; z-index:2; transform: translate(-50%, -50%); text-align:right;}
-.visual .tit_bx h2 {font-size:65px; font-weight:100; line-height:0.9; color:#fff; letter-spacing: -0.035em;}
-.visual .tit_bx h2 strong {font-size:80px; font-weight:900; letter-spacing: -0.025em;}
-.visual .tit_bx p {font-size:23px; font-weight:300; color:#fff; margin-top:35px;}
+.visual .tit_bx h2 {font-size:75px; font-weight:100; line-height:0.95; color:#fff; letter-spacing: -0.035em;}
+.visual .tit_bx h2 strong {font-size:95px; font-weight:900; letter-spacing: -0.025em;}
+.visual .tit_bx p {font-size:20px; font-weight:300; color:#fff; margin-top:35px;}
 
 .swiper-container.main-swiper {width: 100vw; height: 100vh; min-height:600px;}
-.main-swiper img {width:100%; height:100%;}
-.main-swiper .swiper-slide {background-repeat: no-repeat; background-size: cover; background-position: center bottom;}
+.main-swiper .swiper-slide {display:flex; justify-content: center; align-items: center; background-repeat: no-repeat; background-size: cover; background-position: center bottom;}
+.main-swiper .swiper-slide img {width:auto; min-height:100%;}
 .main-swiper .swiper-slide::before {content: ''; display:block; width:100%; height:100%; background-color: rgba(0,0,0,0.5); position:absolute; left:0; top:0;}
 .main-swiper .swiper-slide.slide01 {background-image: url('../img/visual01.jpg');}
 .main-swiper .swiper-slide.slide02 {background-image: url('../img/visual02.jpg');}
@@ -68,6 +68,12 @@
 .board .tab_cont>ul>li li a .date {font-size:12px; line-height:2.1; color:#777; position: absolute; right:0; top:0;}
 
 
+.art_bg {background:none;}
+.books {position:relative; margin-top:100px; position: relative; top:100px; opacity:0;}
+.books::before {content:""; display:block; position:absolute; left:0; top:0; width:100%; height:370px; background-color: #121212; z-index:0;}
+.books .title {position:relative; z-index:2;}
+.books .title * {color:#fff;}
+.book_deta {position:relative; z-index:2;}
 
 
 
@@ -88,7 +94,7 @@
     .info .map p {font-size:14px;}
 }
 @media (max-width:576px){
-    .visual .tit_bx h2 {font-size:45px;}
-    .visual .tit_bx h2 strong {font-size:58px;}
+    .visual .tit_bx h2 {font-size:55px;}
+    .visual .tit_bx h2 strong {font-size:65px;}
     .visual .tit_bx p {font-size:18px; margin-top:20px;}
 }

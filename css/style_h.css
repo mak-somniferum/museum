@@ -1,17 +1,8 @@
-/* 
-*{
-    box-sizing: border-box;
-} 
 
-reset.css에 써있어서 안써도 됨
-*/
-
-.art_bg {background: url('../img/water_bg.jpg') no-repeat center top; background-size: 100% auto;}
 
 /*section books*/
 
 .books{
-    /* width: 100%;  block요소는 기본 width:100% 이므로 불필요한 스타일 */
     border-bottom:1px solid #ddd;
     border-top:1px solid #ddd;
 }
@@ -74,15 +65,7 @@ reset.css에 써있어서 안써도 됨
     background: url('../img/arrow-prev.png');
 }
 
-/*
-.books .book_deta{
-    max-width: 1280px;
-    width: 100%;
-    margin:  0 auto;    .inner 적용으로 필요없어짐
-    
-    border: 1px solid #ddd;
-}
-*/
+
 
 .books .book_deta li{
     width: 87%;
@@ -90,6 +73,7 @@ reset.css에 써있어서 안써도 됨
     margin: auto;
     display:flex;
 }
+
 
 .books .book_deta li .deta_img{
     width: 30%;
@@ -133,19 +117,18 @@ reset.css에 써있어서 안써도 됨
 }
 */
 
-.contest_inner p, .contest b{
-    font-size: 30px;
-    padding: 30px 0;
-}
+
 
 .content{
     width: 60%;
     display: flex;
     margin: auto;
+    position: relative;
 }
 
 .poster{
     width: 50%;
+    padding-right: 20px;
 }
 
 .poster img{
@@ -154,14 +137,72 @@ reset.css에 써있어서 안써도 됨
 
 .content_txt{
     text-align: left;
+    font-size: 15px;
 }
+
+.content button{
+    color: #ddd;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 60px;
+    top: 390px;
+    font-size: 12px;
+    font-weight: 100;
+}
+/* .content .content_txt li dl {display:flex; flex-wrap:wrap;} */
+
+.content .content_txt li dl dt {width: 70px; font-size:15px; line-height:1.6; padding-top:5px;}
+.content .content_txt li dl dd {width:calc(100% - 70px); font-size:15px; line-height:1.6; font-weight:300;}
+
+/* contest_art */
+
+.contest_art{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+}
+
+.contest_art li{
+    width: 200px;
+    padding: 10px;
+}
+.contest_art li img{
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+
+
+
 
 /* section world art */
 .worldArt {border-bottom: 1px solid #ddd;}
 
+.worldArt-swiper{
+    height: 355px;
+}
+
+.worldArt-swiper .swiper-slide {
+    width: auto;
+}
+
+.worldArt-swiper .swiper-slide img{
+    width: auto;
+    height: 100%;
+}
 
 @media (max-width:990px){}
 
 @media (max-width:768px){}
 
-@media (max-width:576px){}
+@media (max-width:576px){
+    .books .book_deta li{
+        flex-direction:column ;
+    }
+
+    .content{
+        flex-direction:column ;
+    }
+}
