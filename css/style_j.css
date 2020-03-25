@@ -1,36 +1,44 @@
 
 .tour{
     
-    height: 300vh;
+    
     background-image: url('../img/tourbg.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    
+}
+
+.tour_inner_wrap{
+    width: 1280px;
+    background-color: rgba(243, 219, 223, .5);
+    height: 450vh;
     position: relative;
+    margin: 0 auto;
 }
 
 .titBox h1{
-   width: 291px;
+   width: 350px;
    height: 74px;
-   font-size: 40px;
+   font-size: 60px;
    font-weight: normal;
    letter-spacing: -0.07em;
    position: absolute;
-   left: 35%;
-   top: 2%;
+   left: 5%;
+   top: 1.3%;
 }
 .titBox h2{
-    width: 212px;
+    width: 250px;
     height: 53px;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: -0.07em;
     position: absolute;
-    left: 48%;
-    top: 4.5%;
+    left: 33%;
+    top: 3.5%;
 }
 
 .tbg img{
-    width: 46%;
+    width: 50%;
     height: 100%;
 }
 .tb1{
@@ -46,7 +54,9 @@
     padding: 5%;
 }
 .c_txtBox{
-    padding: 4% 0 4% 5%;
+    width: 448px;
+    height: 65px;
+    margin: 40px 70px 0;
 }
 
 .txtBox h3{
@@ -59,63 +69,63 @@
     margin-bottom: 5px;
 }
 h5{
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 .txtBox p,.c_txtBox p{
-    font-size: 13px;
+    font-size: 18px;
     
 }
 
 .cbg>div{
-    width: 100%;
-    height: 140px;
-    border-bottom: 1px solid #eee;
+    width: 970px;
+    height: 160px;
+    border-bottom: 1px solid #000;
     display: flex;
-    padding: 20px 0 20px 200px;
+    padding: 10px 0;
     position: relative;
    
 }
 
 .cbg img{
-    position: absolute;
-    width: 200px;
-    height: 120px;
-    top: 10px;
-    left: 0;
+    width: 260px;
+    
 }
 
 .right1{
     position: absolute;
-    right: 25%;top: 9%;
-    width: 490px;
-    height: 350px;
+    right: 0;top: 9%;
+    width: 766px;
+    height: 600px;
+    
 }
 
 .left1{
     position: absolute;
-    left: 25%;top: 25%;
-    width: 490px;
-    height: 350px;
+    left: 0;top: 27.5%;
+    width: 766px;
+    height: 600px;
 }
 
 .right2{
     position: absolute;
-    right: 25%;top: 41%;
-    width: 490px;
-    height: 350px;
+    right: 0;top: 46%;
+    width: 766px;
+    height: 600px;
+    
 }
 
 .left2{
     position: absolute;
-    left:25%;top: 56%;
-    width: 530px;
-    height: 140px;
+    top: 65%; left: 50%;
+    transform: translate(-50%);
+    width: 1020px;
+    height: 972px;
 }
 
 .vr{
-    width: 670px;
-    height: 430px;
+    width: 900px;
+    height: 572px;
     position: absolute;
     bottom: .5%;
     left: 50%;
