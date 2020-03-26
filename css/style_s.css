@@ -1,3 +1,4 @@
+/* html {scroll-behavior: smooth;} */
 /* qlink */
 #qlink {position:fixed; right:20px; top:50%; transform: translateY(-50%); z-index:999;}
 #qlink li {min-width:100px;  opacity: 0.7;}

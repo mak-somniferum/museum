@@ -6,9 +6,8 @@ window.onscroll = function(){
     }else{
         this.document.getElementById('header').classList.remove('white')
     }
-
-    
 }
+
 $(window).scroll(function(){
     var scrollPos2 = $(window).scrollTop()
     if (scrollPos2>3300){
@@ -22,6 +21,13 @@ board()
 $('.user .btn').click(function(){
     $('.user .user_bx').fadeToggle()
 })
+// 퀵메뉴
+$('#qlink a').click(function(){
+    var link = $(this).attr('href')
+    var linkTop = $(link).offset().top
+    $('html').animate({scrollTop:linkTop-110}, 700)
+})
+
 
 // 모바일 메뉴 버튼 클릭시 모바일 메뉴 slideToggle
 $('.m_menu_btn').click(function(){
