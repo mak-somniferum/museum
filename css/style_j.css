@@ -10,10 +10,10 @@
 }
 
 
-.tour .tour_line {position:absolute; left:50%; top:0; transform: translateX(-50%); width:100%; max-width:1280px; padding-left:50px;}
+.tour .tour_line {position:absolute; left:50%; top:0; transform: translateX(-50%); width:100%; max-width:1280px; padding-left:50px; z-index:0;}
 
 .tour .inner {padding:70px 0 50px;}
-.tour .titBox {text-align:center; margin-bottom:200px;}
+.tour .titBox {text-align:center; margin-bottom:200px; position: relative; z-index: 3;}
 .tour .titBox h2{
    font-size: 45px;
    letter-spacing: -0.05em;
@@ -68,7 +68,7 @@
     height: 972px;
 }
  */
-.tbg>div {width:766px; margin-bottom: 30px; background-color: #fff; box-shadow: 20px 20px 40px rgba(0,0,0,0.2); position:relative;}
+.tbg>div {width:766px; margin-bottom: 30px; background-color: #fff; box-shadow: 20px 20px 40px rgba(0,0,0,0.2); position:relative; cursor: pointer;}
 .tbg .img {width:50%; height:100%; overflow: hidden; position:absolute; left:0; top:0;}
 .tbg .img img {width:auto; min-width:100%; min-height:100%; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
 /*
@@ -101,6 +101,9 @@
     display: flex;
     padding: 25px;
     align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
     /* position: relative; */
 }
 .cbg>div:last-child {border-bottom: none;}
@@ -118,15 +121,12 @@
 .cbg .c_txtBox h5{font-size: 25px; font-weight: 700; margin-bottom: 10px;}
 .cbg .c_txtBox p{font-size: 18px; font-weight:100;}
 
-.vr{width: 900px; height: 572px; margin:80px auto 0;}
+.vr{width: 900px; height: 572px; margin:100px auto 0;}
 .vr>iframe{width: 100%; height: 100%;}
 
 
-@media (max-width:990px){/*990보다 커지지 않음, 990이하*/
-    
-}
 
-@media (max-width:768px){/*768보다 커지지 않음 768이하*/
+@media (max-width:800px){/*800px 이하로 설정 ,태블릿 사이즈768*/
 
     .tour .titBox{
         margin-bottom: 200px;
@@ -141,6 +141,24 @@
         left:50%;
         transform: translateX(-25%);
     }
+    .tbg .txtBox{
+        /* padding: 5%; */
+        padding: 32px 22px 50px calc(50% + 22px);
+    }
+
+    .tbg .txtBox h3{
+        font-size: 11px;
+        margin-bottom: 4px;
+        letter-spacing: -0.02rem;
+    }
+    .tbg .txtBox h4{
+        font-size: 25px;
+        /* font-weight: lighter; 직관성 있게 숫자로 씀 */
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .tbg .txtBox p {font-size: 13px; font-weight:300; line-height:1.5;}
+
     .cbg{
         width: 85%;
     }
@@ -151,8 +169,32 @@
         width: 210px;
         height: 130px;
     }
-    .vr{width: 540px; height: 410px; margin:80px auto 0;}
+
+    .cbg .c_txtBox {
+        /* padding: 4% 0 4% 5%;  >>  align-items:center 로 해결*/
+        padding-left:5%;
+    }
+    .cbg .c_txtBox h5{font-size: 20px; font-weight: 700; margin-bottom: 10px;}
+    .cbg .c_txtBox p{font-size: 16px; font-weight:300;}
+    
+    .vr{width: 540px; height: 400px; margin:200px auto 0;}
 }
 
 @media (max-width:576px){/*576보다 커지지 않음 576이하*/
+    
+    .tbg {margin-bottom: 200px;}
+
+    .tbg.right{
+        position: relative;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .cbg{
+        width: 100%;
+    }
+    .cbg .c_txtBox p{font-size: 14px; font-weight:300;}
+    
+
+    .vr{width: 500px; height: 350px; margin:200px auto 0;}
+
 }
