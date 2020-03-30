@@ -41,7 +41,7 @@ $(window).resize(function(){
     if(w>990){
         $('#m_gnb').slideUp()
         $('.m_menu_btn').removeClass('change')
-    }
+    }else{}
 
     board()
 })
@@ -49,7 +49,7 @@ $(window).resize(function(){
 // 하단 게시판
 function board(){
     var w = $(window).width()
-    if(w<=990){
+    if(w<991){
         $('.board .tabs ul li').first().find('a').addClass('active')
         $('.board .tab_cont>ul>li').hide()
         $('.board .tab_cont>ul>li').first().show()
