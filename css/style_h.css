@@ -7,65 +7,53 @@
     border-top:1px solid #ddd;
 }
 
-/*
-.books_inner{
-    max-width: 1280px;
-    width: 100%;
-    width:90%;
-    margin: auto;        common.css에 .inner 공통클래스 만듦
-
-    text-align: center;  common.css에 .title 공통클래스 만듦
-}
-*/
 
 .books_inner p, .books_inner b{
     font-size: 30px;
     padding-top: 30px;
 }
 
-.book-swiper-wrapper {
-    position: relative;
-}
-.book-swiper{
-    width: calc(90% + 1px);
-    position: static !important;
-}
-
-.book-swiper .swiper-wrapper{
-    align-items: center;
-}
-
-.book-swiper .swiper-slide{
-    height:318px;
+.books_box{
     overflow: hidden;
-    background-color: #fcfcfc;
-    border: 1px solid #dfdfdf;
-    cursor: pointer;
-
-    /* 내부 이미지 중앙정렬 */
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.book-swiper .swiper-slide img{
+.book_container{
+    width: 20%;
+}
+
+.book_wrap{
+    width: 1800%;
+    display: flex;
+    margin-left: -100%;
+}
+
+.book_slide{
+    width: 6.6667%;
+    padding: 5px;
+    z-index: 9;
+}
+
+.book_slide img{
     width: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
 }
 
-.book-swiper .swiper-button-next::after,
-.book-swiper .swiper-button-prev::after {content:"";}
-.book-swiper .swiper-button-next,
-.book-swiper .swiper-button-prev {width:25px; height:44px;}
-.book-swiper .swiper-button-next{
-    top: 50%;
-    background: url('../img/arrow-next.png');
-}
-.book-swiper .swiper-button-prev{
-    top: 50%;
-    background: url('../img/arrow-prev.png');
+.arrow{
+    position: absolute;
+    top: 300px;
+
 }
 
+.prev{
+    left: 250px;
+}
 
+.next{
+    right: 250px;
+}
+
+/*book_deta*/
 
 .books .book_deta li{
     width: 87%;
@@ -73,7 +61,6 @@
     margin: auto;
     display:flex;
 }
-
 
 .books .book_deta li .deta_img{
     width: 30%;
@@ -103,21 +90,8 @@
 /*section contest*/
 
 .contest{
-    /* width: 100%;  block요소는 기본 width:100% 이므로 불필요한 스타일 */
     border-bottom:1px solid #ddd;
 }
-
- /*
-.contest_inner{
-    max-width: 1280px;
-    width: 100%;
-    margin: auto;        .inner 적용으로 필요없어짐
-
-    text-align: center;  .title 적용으로 필요없어짐
-}
-*/
-
-
 
 .content{
     width: 60%;
@@ -151,7 +125,6 @@
     font-size: 12px;
     font-weight: 100;
 }
-/* .content .content_txt li dl {display:flex; flex-wrap:wrap;} */
 
 .content .content_txt li dl dt {width: 70px; font-size:15px; line-height:1.6; padding-top:5px;}
 .content .content_txt li dl dd {width:calc(100% - 70px); font-size:15px; line-height:1.6; font-weight:300;}
@@ -159,9 +132,7 @@
 /* contest_art */
 
 .contest_art{
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0;
+    display: none;
 }
 
 .contest_art li{
@@ -172,9 +143,6 @@
     width: 100%;
     border: 1px solid #ddd;
 }
-
-
-
 
 
 /* section world art */
@@ -193,16 +161,39 @@
     height: 100%;
 }
 
-@media (max-width:990px){}
+@media (max-width:990px){
+    .poster{
+        width: 80%;
+    }
 
-@media (max-width:768px){}
+}
+
+@media (max-width:768px){
+    .poster{
+        width: 80%;
+    }
+}
 
 @media (max-width:576px){
+    
+    .book_container{
+        width: 50%;
+    }
+    
     .books .book_deta li{
         flex-direction:column ;
+    }
+
+    .books .book_deta li .deta_img{
+        width: 100%;
+    }
+
+    .poster{
+        width: 100%;
     }
 
     .content{
         flex-direction:column ;
     }
+
 }

@@ -72,6 +72,33 @@ function board(){
 }
 
 // .contest_art 이전 수상작 둘러보기
+
 $('.content button').click(function(){
-    $('.contest_art').animate({'opacity':'1'})
+    $('.contest_art').fadeToggle()
+})
+
+//book_slide
+
+$('.next').click(function(){
+    $('.book_wrap').animate({marginLeft:'-200%'},function(){
+        $('.book_wrap .book_slide').first().appendTo('.book_wrap')
+        $('.book_wrap').css({marginLeft:'-100%'})
+    })
+})
+
+$('.prev').click(function(){
+    $('.book_wrap').animate({marginLeft:'0%'},function(){
+        $('.book_wrap .book_slide').last().prependTo('.book_wrap')
+        $('.book_wrap').css({marginLeft:'-100%'})
+    })
+})
+
+//book_slide click 시
+
+$('.book_slide').click(function(){
+    var idx = $(this).index()
+    console.log(idx)
+    $('.book_deta li').slideUp()
+    // $('.book_deta li').removeClass('on')
+    $('.book_deta li').eq(idx).slideDown()
 })

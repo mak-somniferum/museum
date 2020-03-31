@@ -241,33 +241,73 @@
                         <!-- <p>TODAY <b>BOOKS</b></p> -->
                         <h4>TODAY <strong>BOOKS</strong></h4>
                     </div>
-                    <div class="book-swiper-wrapper">
-                        <div class="swiper-container book-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="img/a-1.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/a-2.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/a-3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/a-4.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/a-5.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/a-6.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/b-1.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/b-2.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/b-3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/b-4.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/b-5.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/b-6.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/c-1.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/c-2.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/c-3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/c-4.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/c-5.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/c-6.jpg" alt=""></div>
+                    <div class="books_box">
+                        <div class="book_container">
+                            <div class="book_wrap">
+                                <div class="book_slide">
+                                    <img src="img/a-1.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/a-2.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/a-3.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/a-4.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/a-5.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/a-6.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/b-1.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/b-2.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/b-3.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/b-4.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/b-5.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/b-6.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/c-1.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/c-2.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/c-3.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/c-4.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/c-5.jpg" alt="">
+                                </div>
+                                <div class="book_slide">
+                                    <img src="img/c-6.jpg" alt="">
+                                </div>
                             </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next book-next"></div>
-                            <div class="swiper-button-prev book-prev"></div>
+                        </div>
+                        <div class="arrow prev">
+                            <img src="img/arrow-prev.png" alt="">
+                        </div>
+                        <div class="arrow next">
+                            <img src="img/arrow-next.png" alt="">
                         </div>
                     </div>
+
                     <!-- book data(책소개)-->
                     <ul class="book_deta">
                         <li class="on">
@@ -660,27 +700,6 @@
         
 
         
-
-
-
-        // 추천 도서 슬라이더
-        var swiperBook = new Swiper('.book-swiper', {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: '.book-next',
-                prevEl: '.book-prev',
-            },
-            mousewheel: true,
-            keyboard: true,
-            breakpoints: {
-                576: {slidesPerView: 2,},
-                768: {slidesPerView: 4,},
-                1280: {slidesPerView: 5,},
-            }
-        });
 
         // world art 슬라이더
     var swiper = new Swiper('.worldArt-swiper', {
