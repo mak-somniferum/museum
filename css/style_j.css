@@ -4,8 +4,8 @@
     
     background-image: url('../img/tourbg.jpg');
     background-repeat: no-repeat; */
-    background: url('../img/tourbg.jpg') no-repeat;
-    background-size: 100% 100%;    
+    background: url('../img/tourbg_left.png') no-repeat ,url('../img/tourbg_right.png') no-repeat top right;
+    background-size: 50% 100%;    
     position: relative;
 }
 
@@ -94,8 +94,11 @@
 }
 .tbg .txtBox p {font-size: 18px; font-weight:100; line-height:1.5;}
 
-
+.cbg a{
+    display: flex;
+}
 .cbg {width:90%; max-width:1020px; margin:0 auto;}
+
 .cbg>div {
     border-bottom: 1px solid #dfdfdf;
     display: flex;
@@ -127,6 +130,10 @@
 
 
 @media (max-width:800px){/*800px 이하로 설정 ,태블릿 사이즈768*/
+    .tour{
+        background-size: 70% 100%;    
+        position: relative;
+    }
 
     .tour .titBox{
         margin-bottom: 200px;
@@ -181,6 +188,10 @@
 }
 
 @media (max-width:576px){/*576보다 커지지 않음 576이하*/
+    .tour{
+        background-size: 90% 100%;    
+        position: relative;
+    }
     
     .tbg {margin-bottom: 200px;}
 
