@@ -56,10 +56,9 @@
 /*book_deta*/
 
 .books .book_deta li{
-    width: 87%;
     overflow: hidden;
     margin: auto;
-    display:flex;
+    display: none;
 }
 
 .books .book_deta li .deta_img{
@@ -94,15 +93,12 @@
 }
 
 .content{
-    width: 60%;
     display: flex;
-    margin: auto;
-    position: relative;
 }
 
 .poster{
-    width: 50%;
-    padding-right: 20px;
+    width: 30%;
+    padding-right: 30px;
 }
 
 .poster img{
@@ -112,6 +108,7 @@
 .content_txt{
     text-align: left;
     font-size: 15px;
+    position: relative;
 }
 
 .content button{
@@ -148,15 +145,20 @@
 /* section world art */
 .worldArt {border-bottom: 1px solid #ddd;}
 
-.worldArt-swiper{
-    height: 355px;
+.worldArt-container{
+    overflow: hidden;
 }
 
-.worldArt-swiper .swiper-slide {
+.worldArt_slide_box{
+    height: 355px;
+    display: flex;
+}
+
+.worldArt_slide_box .swiper-slide {
     width: auto;
 }
 
-.worldArt-swiper .swiper-slide img{
+.worldArt_slide_box .worldArt-slide img{
     width: auto;
     height: 100%;
 }
@@ -187,9 +189,13 @@
     .books .book_deta li .deta_img{
         width: 100%;
     }
+    .books .book_deta li .deta_txt{
+        width: 100%;
+    }
 
     .poster{
         width: 100%;
+        padding: 0;
     }
 
     .content{

@@ -74,7 +74,7 @@ function board(){
 // .contest_art 이전 수상작 둘러보기
 
 $('.content button').click(function(){
-    $('.contest_art').fadeToggle()
+    $('.contest_art').fadeToggle().css({'display':'flex'})
 })
 
 //book_slide
@@ -99,6 +99,8 @@ $('.book_slide').click(function(){
     var idx = $(this).index()
     console.log(idx)
     $('.book_deta li').slideUp()
-    // $('.book_deta li').removeClass('on')
-    $('.book_deta li').eq(idx).slideDown()
+    $('.book_deta li').eq(idx).slideDown().css({'display':'flex'})
 })
+
+//worldArt slide
+
