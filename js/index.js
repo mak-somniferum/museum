@@ -104,3 +104,24 @@ $('.book_slide').click(function(){
 
 //worldArt slide
 
+var mLeft = 0
+var timer = setInterval(move, 20)
+
+$('..worldArt_slide_box').mouseenter(function(){
+    clearInterval(timer)
+})
+
+$('.worldArt_slide_box').mouseleave(function(){
+        timer = setInterval(move, 20)
+})
+
+function move(){
+    mLeft -= 1
+    $('.worldArt_slide_box').css({'marginLeft':mLeft})
+
+    if(mLeft == -201){
+        $('.worldArt_slide_box .worldArt-slide').first().appendTo('.worldArt_slide_box')
+    }else if(mLeft <= -400){
+        mLeft = -200
+    }
+}

@@ -25,6 +25,7 @@
     width: 1800%;
     display: flex;
     margin-left: -100%;
+    align-items: center;
 }
 
 .book_slide{
@@ -94,6 +95,7 @@
 
 .content{
     display: flex;
+    justify-content: center;
 }
 
 .poster{
@@ -154,7 +156,7 @@
     display: flex;
 }
 
-.worldArt_slide_box .swiper-slide {
+.worldArt_slide_box .worldArt-slide {
     width: auto;
 }
 
