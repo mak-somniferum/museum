@@ -80,7 +80,7 @@
 
 .art_bg {background:none;}
 .books {position:relative; margin-top:100px; position: relative; top:100px; opacity:0;}
-.books::before {content:""; display:block; position:absolute; left:0; top:0; width:100%; height:370px; background-color: #121212; z-index:0;}
+.books::before {content:""; display:block; position:absolute; left:0; top:0; width:100%; height:370px; z-index:0;}
 .books .title {position:relative; z-index:2;}
 .books .title * {color:#fff;}
 .book_deta {position:relative; z-index:2;}

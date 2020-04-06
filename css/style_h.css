@@ -13,78 +13,47 @@
     padding-top: 30px;
 }
 
-.books_box{
-    overflow: hidden;
-}
+/*book swiper*/
 
-.book_container{
-    width: 20%;
-}
+.book-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-.book_wrap{
-    width: 1800%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    margin-left: -100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
-}
+  }
 
-.book_slide{
-    width: 6.6667%;
-    padding: 5px;
-    z-index: 9;
-}
+  .book_img img{
+      border: 1px solid #ddd;
+  }
 
-.book_slide img{
-    width: 100%;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
+ .book_txt{
+     width: 40%;
+     text-align: left;
+     padding: 30px;
+ }
 
-.arrow{
-    position: absolute;
-    top: 300px;
+ .book_txt h3{
+     font-size: 36px;
+ }
 
-}
-
-.prev{
-    left: 250px;
-}
-
-.next{
-    right: 250px;
-}
-
-/*book_deta*/
-
-.books .book_deta li{
-    overflow: hidden;
-    margin: auto;
-    display: none;
-}
-
-.books .book_deta li .deta_img{
-    width: 30%;
-    padding: 40px 20px 0;
-}
-
-.books .book_deta li .deta_img img{
-    width: 100%;
-    border: 1px solid #dfdfdf;
-}
-
-.books .book_deta li .deta_txt{
-    width: 70%;
-    padding: 40px 20px 0;
-}
-
-.books .book_deta li .deta_txt h5{
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom:20px;
-}
-.books .book_deta li .deta_txt dl {display:flex; flex-wrap:wrap;}
-.books .book_deta li .deta_txt dl dt {width: 70px; font-size:15px; line-height:1.6; padding-bottom:5px;}
-.books .book_deta li .deta_txt dl dd {width:calc(100% - 70px); font-size:15px; line-height:1.6; font-weight:300;}
 
 
 /*section contest*/
@@ -180,10 +149,14 @@
 
 @media (max-width:576px){
     
-    .book_container{
-        width: 50%;
+    .swiper-slide{
+        flex-direction: column;
     }
     
+    .book_txt{
+        width: 100%;
+    }
+
     .books .book_deta li{
         flex-direction:column ;
     }
