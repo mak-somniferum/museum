@@ -1,211 +1,61 @@
-.tour{
-    /* height:300vh;  >>  유연성을 위해 지움 > 아래 컨텐츠를 absolute로 지정할 필요 없음 (left, left2, right 등)
-    
-    
-    background-image: url('../img/tourbg.jpg');
-    background-repeat: no-repeat; */
-    background: url('../img/tourbg_left.png') no-repeat ,url('../img/tourbg_right.png') no-repeat top right;
-    background-size: 50% 100%;    
-    position: relative;
-}
-
-
+.tour {background: url('../img/tourbg_left.png') no-repeat ,url('../img/tourbg_right.png') no-repeat top right; background-size: 50% 100%; position: relative; overflow:hidden;}
 .tour .tour_line {position:absolute; left:50%; top:0; transform: translateX(-50%); width:100%; max-width:1280px; padding-left:50px; z-index:0;}
 
 .tour .inner {padding:70px 0 50px;}
-.tour .titBox {text-align:center; margin-bottom:200px; position: relative; z-index: 3;}
-.tour .titBox h2{
-   font-size: 45px;
-   letter-spacing: -0.05em;
-   font-weight: 700;
-   /* width: 291px;
-   height: 74px;        width와 height은 .titBox의 text-align:center;를 위해 지움
-   font-weight: normal; 직관성 있게 숫자로 씀
-   position: absolute;
-   left: 35%;
-   top: 2%; */
-}
-.tour .titBox h3{
-    font-size: 40px;
-    letter-spacing: -0.05em;
-    font-weight: 100;
-    /* width: 212px;
-    height: 53px;      width와 height은 .titBox의 text-align:center;를 위해 지움
-    font-weight: bold; 직관성 있게 숫자로 씀
-    position: absolute;
-    left: 48%;
-    top: 4.5%; */
-}
-.tbg {margin-bottom: 150px;}
-.tbg.right{
-    position: relative;
-    left:50%;
-    transform: translateX(-10%);
-    /* position: absolute;
-    right: 25%;top: 9%;
-    width: 490px;
-    height: 350px; */
-}
-/*
-.tbg.left{
-    position: absolute;
-    left: 0;top: 27.5%;
-    width: 766px;
-    height: 600px;
-}
-.right2{
-    position: absolute;
-    right: 0;top: 46%;
-    width: 766px;
-    height: 600px;
-    
-}
-.left2{
-    position: absolute;
-    top: 65%; left: 50%;
-    transform: translate(-50%);
-    width: 1020px;
-    height: 972px;
-}
- */
-.tbg>div {width:766px; margin-bottom: 30px; background-color: #fff; box-shadow: 20px 20px 40px rgba(0,0,0,0.2); position:relative; cursor: pointer;}
-.tbg .img {width:50%; height:100%; overflow: hidden; position:absolute; left:0; top:0;}
-.tbg .img img {width:auto; min-width:100%; min-height:100%; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
-/*
-.tb1{
-    margin-bottom: 23px; >>> .tbg>div에 margin-bottom 추가함
-}
-*/
+.tour .titBox {text-align:center; margin-bottom:200px; position: relative; z-index:1;}
+.tour .titBox h2 {font-size: 45px; letter-spacing: -0.05em; font-weight: 900;}
+.tour .titBox h3 {font-size: 40px; letter-spacing: -0.05em; font-weight: 100;}
 
-.tbg .txtBox{
-    /* padding: 5%; */
-    padding: 50px 50px 50px calc(50% + 50px);
-}
-.tbg .txtBox h3{
-    font-size: 18px;
-    margin-bottom: 10px;
-    letter-spacing: -0.02rem;
-}
-.tbg .txtBox h4{
-    font-size: 35px;
-    /* font-weight: lighter; 직관성 있게 숫자로 씀 */
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.tbg .txtBox p {font-size: 18px; font-weight:100; line-height:1.5;}
+.tour .tbg {margin-bottom: 150px; transition:.4s;}
+.tour .tbg.right {position: relative; left:50%; transform: translateX(-10%);}
 
-.cbg a{
-    display: flex;
-}
-.cbg {width:90%; max-width:1020px; margin:0 auto;}
+.tour .tbg>div {width:766px; margin-bottom: 30px; background-color: #fff; box-shadow: 20px 20px 40px rgba(0,0,0,0.2); position:relative; cursor: pointer;}
+.tour .tbg .img {width:50%; height:100%; overflow: hidden; position:absolute; left:0; top:0;}
+.tour .tbg .img img {width:auto; min-width:100%; min-height:100%; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
 
-.cbg>div {
-    border-bottom: 1px solid #dfdfdf;
-    display: flex;
-    padding: 25px;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    z-index: 3;
-    /* position: relative; */
-}
+.tour .tbg .txtBox { padding: 50px 50px 50px calc(50% + 50px); }
+.tour .tbg .txtBox h3 { font-size: 18px; margin-bottom: 10px; letter-spacing: -0.02rem; }
+.tour .tbg .txtBox h4 { font-size: 35px; font-weight: 700; margin-bottom: 10px; }
+.tour .tbg .txtBox p {font-size: 18px; font-weight:100; line-height:1.5;}
+
+.cbg {max-width:1020px; margin:0 auto; padding:20px; background-color: rgba(255,255,255,0.8); position:relative; z-index:1;}
+.cbg>div {border-bottom: 1px solid #efefef; display: flex; padding: 25px; align-items: center;}
 .cbg>div:last-child {border-bottom: none;}
-.cbg img {
-    width: 260px;
-    height: 160px;
-    /* position: absolute;
-    top: 10px;
-    left: 0; */
+.cbg img {width: 260px; height: 160px; }
+.cbg .c_txtBox {padding-left:5%;}
+.cbg .c_txtBox h5 {font-size: 25px; font-weight: 700; margin-bottom: 10px;}
+.cbg .c_txtBox p {font-size: 18px; font-weight:100;}
+
+.vr {width: 900px; height: 572px; margin:100px auto 0;}
+.vr>iframe {width: 100%; height: 100%;}
+
+@media (max-width:1300px){
+    .tour .tbg.right {transform: translateX(-20%); }
 }
-.cbg .c_txtBox {
-    /* padding: 4% 0 4% 5%;  >>  align-items:center 로 해결*/
-    padding-left:5%;
+@media (max-width:1160px){
+    .tour .titBox {margin-bottom:110px;}
+    .tour .tbg.right {transform: translateX(-30%);}
 }
-.cbg .c_txtBox h5{font-size: 25px; font-weight: 700; margin-bottom: 10px;}
-.cbg .c_txtBox p{font-size: 18px; font-weight:100;}
-
-.vr{width: 900px; height: 572px; margin:100px auto 0;}
-.vr>iframe{width: 100%; height: 100%;}
-
-
-
-@media (max-width:800px){/*800px 이하로 설정 ,태블릿 사이즈768*/
-    .tour{
-        background-size: 70% 100%;    
-        position: relative;
-    }
-
-    .tour .titBox{
-        margin-bottom: 200px;
-    }
-    .tbg {margin-bottom: 350px;}
-    .tbg>div{
-        width: 500px;
-        height: 207px;
-    }
-    .tbg.right{
-        position: relative;
-        left:50%;
-        transform: translateX(-25%);
-    }
-    .tbg .txtBox{
-        /* padding: 5%; */
-        padding: 32px 22px 50px calc(50% + 22px);
-    }
-
-    .tbg .txtBox h3{
-        font-size: 11px;
-        margin-bottom: 4px;
-        letter-spacing: -0.02rem;
-    }
-    .tbg .txtBox h4{
-        font-size: 25px;
-        /* font-weight: lighter; 직관성 있게 숫자로 씀 */
-        font-weight: 700;
-        margin-bottom: 8px;
-    }
-    .tbg .txtBox p {font-size: 13px; font-weight:300; line-height:1.5;}
-
-    .cbg{
-        width: 85%;
-    }
-    .cbg div{
-        padding: 15px;
-    }
-    .cbg img{
-        width: 210px;
-        height: 130px;
-    }
-
-    .cbg .c_txtBox {
-        /* padding: 4% 0 4% 5%;  >>  align-items:center 로 해결*/
-        padding-left:5%;
-    }
-    .cbg .c_txtBox h5{font-size: 20px; font-weight: 700; margin-bottom: 10px;}
-    .cbg .c_txtBox p{font-size: 16px; font-weight:300;}
-    
-    .vr{width: 540px; height: 400px; margin:200px auto 0;}
+@media (max-width:990px){
+    .tour .tbg.right {transform: translateX(-45%);}
 }
+@media (max-width:800px){
+    .tour {background-size: 70% 100%;}
+    .tour .tbg {margin-bottom: 100px;}
+    .tour .tbg.right {left:0; transform: translateX(0);}
+    .tour .tbg>div {width: 100%; height: auto;}
+    .tour .tbg .txtBox {padding: 32px 22px 50px calc(50% + 22px);}
 
-@media (max-width:576px){/*576보다 커지지 않음 576이하*/
-    .tour{
-        background-size: 90% 100%;    
-        position: relative;
-    }
-    
-    .tbg {margin-bottom: 200px;}
+    .tour .tbg .txtBox h3 {font-size: 11px; margin-bottom: 4px; letter-spacing: -0.02rem;}
+    .tour .tbg .txtBox h4 {font-size: 25px; font-weight: 700; margin-bottom: 8px; }
+    .tour .tbg .txtBox p {font-size: 13px; font-weight:300; line-height:1.5;}
 
-    .tbg.right{
-        position: relative;
-        left:50%;
-        transform: translateX(-50%);
-    }
-    .cbg{
-        width: 100%;
-    }
-    .cbg .c_txtBox p{font-size: 14px; font-weight:300;}
-    
+    .cbg>div {padding: 20px;}
+    .cbg img {width: 210px; height: 130px; }
 
-    .vr{width: 500px; height: 350px; margin:200px auto 0;}
-
+    .cbg .c_txtBox h5 {font-size: 20px;}
+    .cbg .c_txtBox p {font-size: 16px;}
+}
+@media (max-width:590px){
+    .tour {background-size: 90% 100%;}
 }

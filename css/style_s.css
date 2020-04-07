@@ -39,13 +39,12 @@
 .info .pay .list01 {margin:10px 0;}
 .info .list01 li {margin-bottom:6px;}
 
-.info .precaut {float:left; width:65%; padding-right:2%;}
 .info .precaut ul {display:flex;}
 .info .precaut ul li {text-align:center; width:25%;}
 .info .precaut ul li p .img {display:inline-block; padding:5px 0;}
 .info .precaut ul li p .img img {width:80px;}
-.info .etc {float:left; margin-bottom:0;}
-.info article::after {content:""; display:block; clear:both;}
+/* .info .etc {float:left; margin-bottom:0;}
+.info article::after {content:""; display:block; clear:both;} */
 
 .info .map {min-height:250px; padding:0; background: url('../img/map.jpg') no-repeat center; background-size:cover; position:relative; cursor: pointer;}
 .info .map::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:2;}
@@ -93,14 +92,16 @@
     .info article:first-child {padding-right:0;}
 }
 @media (max-width:990px){
+    #qlink {display:none;}
     .board .tabs ul li:first-child {border-left:none;}
     .board .tab_cont>ul {display:block; position:relative; height:200px;}
     .board .tab_cont>ul>li {width:100%; border:none !important; position: absolute; left:0; top:0; display:none;}
     .board .tabs ul li a.active {color:#ddd;}
 }
 @media (max-width:768px){
+    /* 200407 수정
     .info .precaut {float:none; width:100%;}
-    .info .etc {float:none;}
+    .info .etc {float:none;} */
     .info .map p {font-size:14px;}
 }
 @media (max-width:576px){
