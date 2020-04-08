@@ -1,5 +1,7 @@
 ::selection {background-color: #000; color:#fff;}
 
+
+
 /* header */
 header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fixed; left:0; top:0; z-index:10; transition:background-color 0.4s;}
 .header_inner {display:flex; justify-content:space-between; align-items:center; width:96%; max-width:1280px; height:110px; margin:0 auto; position: relative;}
@@ -61,7 +63,7 @@ footer {background-color: #121212; border-top: 1px solid #333;}
 .inner {width:90%; max-width:1280px; margin:0 auto; padding:50px 0;}
 .title {margin-bottom: 50px; text-align:center;}
 .title h4 {font-size:40px; font-weight:100; color:#1e1e1e; letter-spacing: -0.05em;}
-.title h4 strong {font-size:40px; font-weight:700; color:#1e1e1e;}
+.title h4 strong {font-size:40px; font-weight:900; color:#1e1e1e;}
 
 
 
@@ -75,6 +77,7 @@ footer {background-color: #121212; border-top: 1px solid #333;}
     .f_utill .family {display:none;}
 }
 @media (max-width:576px){
+    body, html {overflow: auto !important;}
     .footer_inner {flex-direction:column-reverse; transition: 0.4s;}
     .f_utill {margin-bottom:10px;}
 }

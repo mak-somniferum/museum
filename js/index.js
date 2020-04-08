@@ -22,7 +22,7 @@ $('.user .btn').click(function(){
     $('.user .user_bx').fadeToggle()
 })
 // 퀵메뉴
-$('#qlink a').click(function(){
+$('#qlink a, #m_gnb a').click(function(){
     var link = $(this).attr('href')
     var linkTop = $(link).offset().top
     $('html').animate({scrollTop:linkTop-110}, 700)
