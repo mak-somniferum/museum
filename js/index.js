@@ -15,13 +15,6 @@ $(window).scroll(function(){
     }
 })
 
-// skrollr.js 때문에 모바일 스크롤이 안되는 현상
-$(window).resize(function(){
-    var w = $(window).width()
-    if(w<700){
-        $('html, body').css({'overflow-y':'scroll'})
-    }
-})
 
 board()
 

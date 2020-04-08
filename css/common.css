@@ -1,5 +1,5 @@
 ::selection {background-color: #000; color:#fff;}
-html, body {overflow-y: scroll !important;}
+html {overflow-y: scroll !important;}
 
 
 /* header */
