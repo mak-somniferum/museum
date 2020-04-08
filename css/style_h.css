@@ -1,17 +1,16 @@
 
 
 /*section books*/
-
-.books{
-    border-bottom:1px solid #ddd;
-    border-top:1px solid #ddd;
-}
+/* 서진 스타일에 있는거 옮겼어요 */
+.books {position:relative; top:100px; opacity:0;}
 
 
 .books_inner p, .books_inner b{
     font-size: 30px;
     padding-top: 30px;
 }
+
+
 
 /*book swiper*/
 
