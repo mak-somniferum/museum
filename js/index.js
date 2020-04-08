@@ -15,6 +15,13 @@ $(window).scroll(function(){
     }
 })
 
+$(window).resize(function(){
+    var w = $(window).width()
+    if(w<700){
+        $('html, body').css({'overflow':'scroll scroll'})
+    }
+})
+
 board()
 
 // 상단 유저 버튼 클릭시 로그인, 회원가입 레이어 fadeToggle
@@ -22,7 +29,7 @@ $('.user .btn').click(function(){
     $('.user .user_bx').fadeToggle()
 })
 // 퀵메뉴
-$('#qlink a, #m_gnb a').click(function(){
+$('#qlink a, #m_gnb a, #gnb a').click(function(){
     var link = $(this).attr('href')
     var linkTop = $(link).offset().top
     $('html').animate({scrollTop:linkTop-110}, 700)

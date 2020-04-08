@@ -100,11 +100,11 @@
 }
 @media (max-width:768px){
     .info .map p {font-size:14px;}
+    html, body {overflow:scroll !important;}
+    body {height:10000px; background-color: red;}
 }
 @media (max-width:576px){
     .visual .tit_bx h2 {font-size:55px;}
     .visual .tit_bx h2 strong {font-size:65px;}
     .visual .tit_bx p {font-size:18px; margin-top:20px;}
-
-    body, html {overflow:auto !important;}
-}
+    
