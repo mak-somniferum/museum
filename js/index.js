@@ -15,24 +15,22 @@ $(window).scroll(function(){
     }
 })
 
+// skrollr.js 때문에 모바일 스크롤이 안되는 현상
 $(window).resize(function(){
     var w = $(window).width()
     if(w<700){
-        $('html, body').css({'overflow':'scroll scroll'})
+        $('html, body').css({'overflow-y':'scroll'})
     }
 })
 
 board()
 
-// 상단 유저 버튼 클릭시 로그인, 회원가입 레이어 fadeToggle
-$('.user .btn').click(function(){
-    $('.user .user_bx').fadeToggle()
-})
 // 퀵메뉴
 $('#qlink a, #m_gnb a, #gnb a').click(function(){
     var link = $(this).attr('href')
     var linkTop = $(link).offset().top
     $('html').animate({scrollTop:linkTop-110}, 700)
+    $('#m_gnb').slideUp()
 })
 
 

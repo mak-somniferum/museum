@@ -87,9 +87,11 @@
 
 
 @media (max-width:1200px){
+    .info::before {height:140px;}
     .info .inner {flex-flow: column; padding-bottom:50px;}
     .info article {width:100%; padding-right:0;}
     .info article:first-child {padding-right:0;}
+    .info .precaut {margin-bottom: 50px;}
 }
 @media (max-width:990px){
     #qlink {display:none;}
@@ -100,11 +102,10 @@
 }
 @media (max-width:768px){
     .info .map p {font-size:14px;}
-    html, body {overflow:scroll !important;}
-    body {height:10000px; background-color: red;}
+    .info .title h4 strong {font-size:70px;}
 }
 @media (max-width:576px){
     .visual .tit_bx h2 {font-size:55px;}
     .visual .tit_bx h2 strong {font-size:65px;}
     .visual .tit_bx p {font-size:18px; margin-top:20px;}
-    
+}
