@@ -41,16 +41,6 @@
                     <li><a href="#books">BOOKS</a></li>
                 </ul>
             </nav>
-    
-            <!-- <div class="user">
-                <button class="btn">User</button>
-                <div class="user_bx">
-                    <ul>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Join Us</a></li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
     </header>
 
@@ -369,7 +359,7 @@
                         <li><img src="img/ct_02.jpg" alt=""></li>
                         <li><img src="img/ct_03.jpg" alt=""></li>
                         <li><img src="img/ct_04.jpg" alt=""></li>
-                        <li><img src="img/ct_05.jpg" alt=""></li>
+                        <!-- <li><img src="img/ct_05.jpg" alt=""></li> 파일없음 -->
                         <li><img src="img/ct_06.jpg" alt=""></li>
                         <li><img src="img/ct_07.jpg" alt=""></li>
                         <li><img src="img/ct_08.jpg" alt=""></li>
@@ -585,25 +575,25 @@
         
         //book slide
         var swiper = new Swiper('.book_container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
         
 
         // world art 슬라이더
-    var swiper = new Swiper('.worldArt-swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        loop: true,
-    	mousewheel: true,
-        keyboard: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-    });
+        var swiper = new Swiper('.worldArt-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            loop: true,
+            mousewheel: true,
+            keyboard: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
 
     </script>
 </body>

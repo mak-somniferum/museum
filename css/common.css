@@ -77,7 +77,6 @@ footer {background-color: #121212; border-top: 1px solid #333;}
     .f_utill .family {display:none;}
 }
 @media (max-width:576px){
-    body, html {overflow: auto !important;}
     .footer_inner {flex-direction:column-reverse; transition: 0.4s;}
     .f_utill {margin-bottom:10px;}
 }

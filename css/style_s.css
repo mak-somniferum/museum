@@ -99,13 +99,12 @@
     .board .tabs ul li a.active {color:#ddd;}
 }
 @media (max-width:768px){
-    /* 200407 수정
-    .info .precaut {float:none; width:100%;}
-    .info .etc {float:none;} */
     .info .map p {font-size:14px;}
 }
 @media (max-width:576px){
     .visual .tit_bx h2 {font-size:55px;}
     .visual .tit_bx h2 strong {font-size:65px;}
     .visual .tit_bx p {font-size:18px; margin-top:20px;}
+
+    body, html {overflow:auto !important;}
 }
