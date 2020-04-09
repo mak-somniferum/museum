@@ -7,7 +7,7 @@ header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fix
 .header_inner {display:flex; justify-content:space-between; align-items:center; width:96%; max-width:1280px; height:110px; margin:0 auto; position: relative;}
 .header_inner h1 a {display:block; width:170px; height:79px; text-indent:-9999px; background: url('../img/logo_w.png') no-repeat; background-size: contain; transition:background 0.4s;}
 
-#gnb {width:60%;}
+#gnb {width:50%;}
 #gnb ul {display:flex; justify-content: space-between;}
 #gnb ul li a {display:block; color:#fff; line-height:110px; letter-spacing:-1px; font-weight:700; font-size:22px; transition: color 0.3s;}
 #gnb ul li a:hover {color:#8cc63f;}
@@ -53,8 +53,9 @@ footer {background-color: #121212; border-top: 1px solid #333;}
 .title {margin-bottom: 50px; text-align:center; word-break:keep-all;}
 .title h4 {font-size:40px; font-weight:100; color:#1e1e1e; letter-spacing: -0.05em;}
 .title h4 strong {font-size:40px; font-weight:900; color:#1e1e1e;}
-.title.big {height:192px; padding-top:55px; background-color: #dfdfdf; transition:.4s;}
-.title.big h3 {font-size:100px; color:#fff; transition:.4s; font-weight:900; letter-spacing: -3px;}
+.title.big {padding:70px 0; transition:.4s; margin-bottom:0;}
+.title.big h3 {font-size:70px; font-weight:400; font-style: italic; padding-bottom:30px; color:#1e1e1e; position:relative; transition:.4s; letter-spacing: -3px;}
+.title.big h3::before {content:""; display:block; width:70px; height:2px; background:#1e1e1e; position:absolute; left:50%; bottom:0; transform: translateX(-50%);}
 
 
 @media (max-width:1200px){
@@ -73,6 +74,7 @@ footer {background-color: #121212; border-top: 1px solid #333;}
 @media (max-width:576px){
     .footer_inner {flex-direction:column-reverse; transition: 0.4s;}
     .f_utill {margin-bottom:10px;}
+    .title.big h3 {font-size:50px;}
 }
 
 

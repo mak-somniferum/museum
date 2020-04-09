@@ -23,9 +23,9 @@
 .tour .tbg .img {width:50%; height:100%; overflow: hidden; position:absolute; left:0; top:0;}
 .tour .tbg .img img {width:auto; min-width:100%; min-height:100%; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
 
-.tour .tbg .txtBox { padding: 50px 50px 50px calc(50% + 50px); }
-.tour .tbg .txtBox h3 { font-size: 18px; margin-bottom: 10px; letter-spacing: -0.02rem; }
-.tour .tbg .txtBox h4 { font-size: 35px; font-weight: 700; margin-bottom: 10px; }
+.tour .tbg .txtBox {padding: 50px 50px 50px calc(50% + 50px); }
+.tour .tbg .txtBox h3 {font-size: 18px; font-weight:500; margin-bottom: 10px; letter-spacing: -0.02rem; }
+.tour .tbg .txtBox h4 {font-size: 35px; font-weight:800; margin-bottom: 10px; }
 .tour .tbg .txtBox p {font-size: 18px; font-weight:100; line-height:1.5;}
 
 .cbg {max-width:1020px; margin:0 auto; padding:20px; background-color: rgba(255,255,255,0.8); position:relative; z-index:1;}

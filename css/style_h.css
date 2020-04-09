@@ -2,7 +2,7 @@
 
 /*section books*/
 /* 서진 스타일에 있는거 옮겼어요 */
-.books {position:relative; top:100px; opacity:0;}
+.books {position:relative; top:0; opacity:1;}
 
 
 .books_inner p, .books_inner b{

@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:700,900&display=swap');
+@import url('../fonts/NotoSans.css');
 
 /* reset */
-* {box-sizing: border-box; font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 14px; line-height: 1.2; color: #333;}
+* {box-sizing: border-box; font-family: 'Noto Sans', 'Malgun Gothic', sans-serif; font-size: 14px; line-height: 1.2; color: #333;}
 html {overflow-x: hidden;}
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,
 th,td,input,select,textarea,button {margin: 0; padding: 0;}

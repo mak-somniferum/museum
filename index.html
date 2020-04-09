@@ -84,10 +84,10 @@
             <!-- bg_wrap -->
             
             <div id="skrollr-body" class="tour_line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="882px" height="3800px"> <!-- viewBox="0 0 1400 4222" -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="882px" height="3820px"> <!-- viewBox="0 0 1400 4222" -->
                     <path
-                    style="fill: none;stroke: #a2db03;stroke-miterlimit: 10;stroke-width: 50px;stroke-dasharray:11500;stroke-dashoffset:0"
-                    data-0="stroke-dashoffset:11500;" data-end="stroke-dashoffset:0;"
+                    style="fill: none;stroke: #8cc63f;stroke-miterlimit: 10;stroke-width: 50px;stroke-dasharray:17000;stroke-dashoffset:0"
+                    data-0="stroke-dashoffset:17000;" data-end="stroke-dashoffset:0;"
                     d="M109.31 0 L109.31 240.12 697.42 240.12 697.42 887.86 253.25 887.86 253.25 1007.13 25 1007.13 25 1790.6 857.82 1790.6 857.82 2569.95 25 2569.95 25 4324"/>
                 </svg>
             </div>
@@ -193,10 +193,6 @@
                     </div>
                 </div>
                 <!-- cbg -->
-
-                <!-- <div class="vr">
-                    <iframe src="http://www.sexmuseum.or.kr/menu32/vr.html" frameborder="0"></iframe>
-                </div> -->
             </div>
             <!-- inner -->
         </section>
@@ -649,31 +645,31 @@
     </footer>
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/skrollr.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
     <script>
         
         var $grid = $('.grid').imagesLoaded(function(){
-            $grid.isotope({
-    itemSelector: '.grid-item',
-    masonry: {
-      columnWidth: 200
-    }
+                $grid.isotope({
+                    itemSelector: '.grid-item',
+                    masonry: {
+                    columnWidth: 200
+                    }
+                })
+            })
+
+        $(".art_category").on("click", "li", function () {
+            var filterValue = $(this).attr("data-filter")
+            $grid.isotope({ filter: filterValue })
         })
-    })
 
-  $(".art_category").on("click", "li", function () {
-      var filterValue = $(this).attr("data-filter")
-    $grid.isotope({ filter: filterValue })
-  })
-
-  $('.art_category li').click(function(){
-    $('.art_category li').removeClass('on')
-    $(this).addClass('on')
-})
+        $('.art_category li').click(function(){
+            $('.art_category li').removeClass('on')
+            $(this).addClass('on')
+        })
 
         // 메인 투어 라인
         skrollr.init({

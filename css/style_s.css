@@ -27,11 +27,10 @@
 
 
 /* info */
-.info {position:relative; background: url('../img/info_bg.png') no-repeat center bottom; background-size:cover;}
-.info::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(255,255,255,0.85); z-index:0;}
-.info .title,
-.info .inner {position:relative; z-index:1;}
-.info .title.big {background-color: #a2db03;}
+.info {background: url('../img/info_bg.jpg') no-repeat center center; background-size:cover; border-top:30px solid #8cc63f;}
+.info .title.big {background-color: #fff; border-top:50px solid #121212;}
+.info .title.big h3 {color:#121222; font-size:70px; font-weight:400; font-style: italic; padding-bottom:30px; position:relative;}
+.info .title.big h3::after {content:""; display:block; width:70px; height:2px; background:#121222; position:absolute; left:50%; bottom:0; transform: translateX(-50%);}
 .info .inner {display:flex; flex-wrap:wrap;}
 .info article {width:50%; padding-right:50px;}
 .info article > div {margin-bottom:50px;}
@@ -79,8 +78,11 @@
 .board .tab_cont>ul>li li a .date {font-size:12px; line-height:2.1; color:#777; position: absolute; right:0; top:0;}
 
 
-.art_bg {background:url('../img/water_bg2.jpg') repeat-x center -100px;}
-.contest .title.big {background-color: #121212; margin-bottom: 0;}
+.art_bg {background:url('../img/water_bg2.jpg') repeat-y center -100px; background-size:contain;}
+.contest .title.big {border-top:50px solid #121212;}
+.contest .inner {padding-top:0;}
+
+
 
 
 @media (max-width:1200px){
@@ -97,8 +99,8 @@
     .board .tabs ul li a.active {color:#ddd;}
 }
 @media (max-width:768px){
-    .info .title.big {margin-bottom:0;}
     .info .map p {font-size:14px;}
+    .info .title.big h3 {font-size:55px;}
 }
 @media (max-width:576px){
     .visual .tit_bx h2 {font-size:55px;}

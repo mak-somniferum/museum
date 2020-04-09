@@ -1,17 +1,12 @@
-// 스크롤 위치 100 이상/이하 > header white클래스 추가/제거
-window.onscroll = function(){
-    var scrollPos = window.pageYOffset
-    if (scrollPos>100){
-        this.document.getElementById('header').classList.add('white')
-    }else{
-        this.document.getElementById('header').classList.remove('white')
-    }
-}
 
 $(window).scroll(function(){
-    var scrollPos2 = $(window).scrollTop()
-    if (scrollPos2>3300){
-        $('.books').animate({'opacity':'1','top':'0'})
+    var scrollPos = $(window).scrollTop()
+
+    // 스크롤 위치 100 이상/이하 > header white클래스 추가/제거
+    if (scrollPos>100){
+        $('#header').addClass('white')
+    }else{
+        $('#header').removeClass('white')
     }
 })
 
