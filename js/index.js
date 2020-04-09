@@ -10,8 +10,35 @@ $(window).scroll(function(){
     }
 })
 
+// 미술대전 이전 수상작 둘러보기 버튼
+var contest = 0
+$('.contest .info_txt .view_btn').click(function(e){
+    e.preventDefault()
+
+    contest = !contest
+    if(contest){
+        $(this).addClass('active')
+        $(this).text('이전 수상작 닫기')
+        $('.contest_art').slideDown()
+    }else{
+        $(this).removeClass('active')
+        $(this).text('이전 수상작 둘러보기')
+        $('.contest_art').slideUp()
+    }
+})
+// 미술대전 이전 수상작 둘러보기 필터
+$(".art_category li").click(function(){
+    $('.art_category li').removeClass('on')
+    $(this).addClass('on')
+
+    var filterValue = $(this).attr("data-filter")
+    $grid.isotope({ filter: filterValue })
+})
+
 
 board()
+
+
 
 // 퀵메뉴
 $('#qlink a, #m_gnb a, #gnb a').click(function(){

@@ -59,7 +59,6 @@ footer {background-color: #121212; border-top: 1px solid #333;}
 
 
 @media (max-width:1200px){
-    .title.big {height:140px; padding-top:45px;}
     .title.big h3 {font-size:70px;}
 }
 @media (max-width:990px){
