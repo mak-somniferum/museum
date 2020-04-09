@@ -123,3 +123,21 @@ function move(){
         mLeft = -200
     }
 }
+
+
+
+var $grid = $(".grid").isotope({
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 200
+    }
+  })
+  $(".art_category").on("click", "li", function () {
+      var filterValue = $(this).attr("data-filter")
+    $grid.isotope({ filter: filterValue })
+  })
+
+  $('.art_category li').click(function(){
+      $('.art_category li').removeClass('on')
+      $(this).addClass('on')
+  })
