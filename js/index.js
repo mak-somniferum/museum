@@ -70,7 +70,6 @@ function board(){
 }
 
 
-
 //worldArt slide
 
 var mLeft = 0
@@ -94,4 +93,6 @@ function move(){
         mLeft = -200
     }
 }
+
+
 
