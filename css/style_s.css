@@ -27,12 +27,12 @@
 
 
 /* info */
-.info {position:relative; /* background: url('../img/info_bg.png') no-repeat center bottom; background-size:cover; */}
-.info::before {content:""; display:block; height:192px; background-color: #a2db03; position:absolute; left:0; right:0; top:0; z-index:-1;}
-/* .info::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(255,255,255,0.85);} */
+.info {position:relative; background: url('../img/info_bg.png') no-repeat center bottom; background-size:cover;}
+.info::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(255,255,255,0.85); z-index:0;}
+.info .title,
+.info .inner {position:relative; z-index:1;}
+.info .title.big {background-color: #a2db03;}
 .info .inner {display:flex; flex-wrap:wrap;}
-.info .title {width:100%;}
-.info .title h4 strong {font-size:100px; color:#fff;}
 .info article {width:50%; padding-right:50px;}
 .info article > div {margin-bottom:50px;}
 .info article:first-child {padding-right:2%;}
@@ -47,8 +47,6 @@
 .info .precaut ul li {text-align:center; width:25%;}
 .info .precaut ul li p .img {display:inline-block; padding:5px 0;}
 .info .precaut ul li p .img img {width:80px;}
-/* .info .etc {float:left; margin-bottom:0;}
-.info article::after {content:""; display:block; clear:both;} */
 
 .info .map {min-height:250px; padding:0; background: url('../img/map.jpg') no-repeat center; background-size:cover; position:relative; cursor: pointer;}
 .info .map::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); z-index:2;}
@@ -81,13 +79,11 @@
 .board .tab_cont>ul>li li a .date {font-size:12px; line-height:2.1; color:#777; position: absolute; right:0; top:0;}
 
 
-.art_bg {background:none;}
-
-
+.art_bg {background:url('../img/water_bg2.jpg') repeat-x center -100px;}
+.contest .title.big {background-color: #121212; margin-bottom: 0;}
 
 
 @media (max-width:1200px){
-    .info::before {height:140px;}
     .info .inner {flex-flow: column; padding-bottom:50px;}
     .info article {width:100%; padding-right:0;}
     .info article:first-child {padding-right:0;}
@@ -101,8 +97,8 @@
     .board .tabs ul li a.active {color:#ddd;}
 }
 @media (max-width:768px){
+    .info .title.big {margin-bottom:0;}
     .info .map p {font-size:14px;}
-    .info .title h4 strong {font-size:70px;}
 }
 @media (max-width:576px){
     .visual .tit_bx h2 {font-size:55px;}

@@ -12,17 +12,6 @@ header {width:100%; border-bottom:1px solid rgba(255,255,255,0.4); position: fix
 #gnb ul li a {display:block; color:#fff; line-height:110px; letter-spacing:-1px; font-weight:700; font-size:22px; transition: color 0.3s;}
 #gnb ul li a:hover {color:#8cc63f;}
 
-/* 200407 삭제 
-.user {position: absolute; right:0; top:50%; transform: translateY(-50%);}
-.user .btn {display:block; width:50px; height:50px; border-radius: 50%; background: #fff; text-indent:-9999px;}
-.user .user_bx {display:none; position: absolute; left:50%; top:65px; transform: translateX(-50%); box-shadow: 0 5px 13px rgba(0,0,0,0.15);}
-.user .user_bx::before {content: ''; display:block; width:13px; height:8px; background: url('../img/arrow-user.png') no-repeat; position:absolute; left:50%; top:0; transform: translate(-50%, -100%);}
-.user .user_bx ul li {border-bottom: 1px solid #e1e1e1;}
-.user .user_bx ul li:last-child {border-bottom: none;}
-.user .user_bx ul li a {display:block; width:100px; line-height:44px; color:#555; text-align:center; background-color: #fff; transition: 0.2s;}
-.user .user_bx ul li a:hover {background-color: #333; color:#fff; font-weight:400;}
-*/
-
 /* mobile m_menu_btn, m_gnb */
 .m_menu_btn, #m_gnb {display:none;}
 .m_menu_btn {position:absolute; right:0; top:50%; transform:translateY(-50%); cursor: pointer;}
@@ -61,12 +50,17 @@ footer {background-color: #121212; border-top: 1px solid #333;}
 
 /* main */
 .inner {width:90%; max-width:1280px; margin:0 auto; padding:50px 0;}
-.title {margin-bottom: 50px; text-align:center;}
+.title {margin-bottom: 50px; text-align:center; word-break:keep-all;}
 .title h4 {font-size:40px; font-weight:100; color:#1e1e1e; letter-spacing: -0.05em;}
 .title h4 strong {font-size:40px; font-weight:900; color:#1e1e1e;}
+.title.big {height:192px; padding-top:55px; background-color: #dfdfdf; transition:.4s;}
+.title.big h3 {font-size:100px; color:#fff; transition:.4s; font-weight:900; letter-spacing: -3px;}
 
 
-
+@media (max-width:1200px){
+    .title.big {height:140px; padding-top:45px;}
+    .title.big h3 {font-size:70px;}
+}
 @media (max-width:990px){
     .header_inner {justify-content: center; height:90px;}
     .header_inner h1 a {height:69px;}
