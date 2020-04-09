@@ -651,10 +651,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/index.js"></script>
     <script>
         
+        var $grid = $('.grid').imagesLoaded(function(){
+            $grid.isotope({
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 200
+    }
+        })
+    })
+
+  $(".art_category").on("click", "li", function () {
+      var filterValue = $(this).attr("data-filter")
+    $grid.isotope({ filter: filterValue })
+  })
+
+  $('.art_category li').click(function(){
+    $('.art_category li').removeClass('on')
+    $(this).addClass('on')
+})
+
         // 메인 투어 라인
         skrollr.init({
             forceHeight: false
