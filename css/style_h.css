@@ -81,36 +81,71 @@
     position: relative;
 }
 
-.content button{
-    color: #ddd;
-    border: 1px solid #dfdfdf;
-    border-radius: 10px;
-    padding: 10px;
-    position: absolute;
-    right: 60px;
-    top: 390px;
-    font-size: 12px;
-    font-weight: 100;
-}
+
 
 .content .content_txt li dl dt {width: 70px; font-size:15px; line-height:1.6; padding-top:5px;}
 .content .content_txt li dl dd {width:calc(100% - 70px); font-size:15px; line-height:1.6; font-weight:300;}
 
 /* contest_art */
 
-.contest_art{
-    display: none;
-}
-
-.contest_art li{
-    width: 200px;
+.conest_art h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .art_category {
+    display: flex;
+    padding: 30px 0;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .art_category li {
+    width: 100px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
     padding: 10px;
-}
-.contest_art li img{
+  }
+  .art_category li.on{
+    background-color: #ddd;
+  }
+  .art_category li:nth-child(2){
+    border-left: none;
+  }
+  .art_category li:nth-child(3){
+    border-left: none;
+  }
+  .art_category li:nth-child(4){
+    border-left: none;
+  }
+  
+  .grid {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .grid:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .grid-item {
+    width: 200px;
+    font-size: 0;
+    float: left;
+  }
+  
+  .grid-item img {
     width: 100%;
     border: 1px solid #ddd;
-}
-
+  }
+  
+  .art_box{
+    padding: 5px;
+  }
 
 /* section world art */
 .worldArt {border-bottom: 1px solid #ddd;}
